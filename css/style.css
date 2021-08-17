@@ -4,6 +4,9 @@
         margin-right: 40px;
     }
     nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -14,45 +17,32 @@
         margin-right: 10px;
     }
     #surnom {
-        text-align: left;
-        display: inline;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 35px;
         color: green;
-    }
-    #menu {
-        text-align: right;
-        display: inline;
-        margin-left: 800px;
+        padding-bottom: 15px;
     }
     #presentation {
-        position: relative;
-        display: inline-block;
-        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
     }
     #identite {
-        text-align: left;
-        display: inline;
+        display: flex;
+        flex-direction: column;
     }
     #nom {
-        display: inline;
-        width: 150px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 50px;
     }
     #titre {
-        display: inline;
-        width: 150px;
         margin-bottom: 20px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 18px;
         color: green;
     }
     #img {
-        display: inline-block;
-        margin-left: 800px;
-        position: absolute;
         top: 2px;
         border-radius: 50px;
     }
@@ -69,103 +59,100 @@
         text-align: center;
     }
     #desc-competence {
-        position: relative;
-        height: 400px;
-    }
-    #aptitude {
-        position: absolute;
-        top: 120px;
-        padding-left: 300px;
-    }
-    .liste-apt {
-        display: inline-block;
-        text-align: center;
-        padding-top: 180px;
-        width: 250px;
-        margin-left: 10px;
-        border: solid 1px green;
-        border-radius: 10px;
-    }
-    #comp-exp {
-        position: absolute;
-        margin-left: 300px;
-        display: inline-block;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: bolder;
-        color: green;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+
     }
     #experience {
-        position: absolute;
         top: 50px;
         font-size: 23px;
         width: 250px;
     }
     #anne {
-        display: inline-block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 80px;
         font-weight: bolder;
         color: green;
     }
+    #comp-exp {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+        color: green;
+    }
+    #aptitude {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .liste-apt {
+        text-align: center;
+        padding-top: 180px;
+        width: 250px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border: solid 1px green;
+        border-radius: 10px;
+    }
     #projet {
-        position: relative;
-        height: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
     }
     #projet-title {
-        position: absolute;
-        margin-left: 60px;
-        display: inline-block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         font-weight: bolder;
         color: green;
     }
     #projet-cont {
-        position: absolute;
-        margin-left: 600px;
-        display: inline-block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
     }
     #projet-detail {
-        position: absolute;
-        margin-top: 150px;
-        margin-left: 60px;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .proj {
         width: 350px;
         height: 300px;
-        margin: 20px;
+        padding: 20px;
+    }
+    #personnel {
+        display: flex;
+        flex-wrap: wrap;
     }
     .perso , .com {
-        display: inline-block;
-        position: relative;
-        height: 400px;
-        width: 1200px;
-        margin-left: 60px;
-    }
-    #image-perso {
-        display: inline-block;
-        position: absolute;
-    }
-    #presentation-personnel {
-        display: inline-block;
-        position: absolute;
-        margin-left: 520px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 100%;
     }
     #image-pers {
         width: 500px;
         height: 400px;
+        flex-basis: 50%;
         border-radius: 20px;
+    }
+    #presentation-personnel {
+        flex-basis: 50%;
+        padding-left: 2%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
     }
     #presentation-perso {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 28px;
         color: green;
+    }
+    #store {
+        width: 180px;
+        height: 55px;
+        padding-left: 35%;
     }
     .commentaire {
         display: inline-block;
@@ -193,19 +180,18 @@
         font-family: Arial, Helvetica, sans-serif;
         color: darkgrey;
     }
+    #footer {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     #contact-gauche {
-        text-align: left;
-        display: block;
         width: 600px;
-        height: 100px;
     }
     #contact-droit {
-        text-align: left;
-        display: block;
         width: 400px;
         height: 100px;
-        margin-left: 800px;
-        margin-top: -120px;
     }
     input {
         width: 350px;
@@ -219,29 +205,95 @@
 
 /* ---------Mise en page smartphone -----------  */
 @media all and (max-width:576px) {
-    
+    nav {
+        flex-wrap: wrap;
+    }
+    #presentation {
+        flex-wrap: wrap-reverse;
+        height: 600px;
+
+    }
+    #experience {
+        text-align: center;
+    }
+    #image-pers {
+        flex-basis: 100%;
+        width: 350px;
+        height: 270px;
+    }
+    #presentation-personnel {
+        flex-basis: 100%;
+    }
 }
 
 
 /* ---------Mise en page tablette -----------  */
 @media all and (min-width:576px) and (max-width:768px) {
+    #presentation {
+        flex-wrap: wrap-reverse;
+    }
+    #experience {
+        text-align: center;
+        width: 100%;
+    }
+    #image-pers {
+        flex-basis: 100%;
+        width: 600px;
+        height: 500px;
+    }
+    #presentation-personnel {
+        flex-basis: 100%;
+    }
     
 }
 
 
 /* ---------Mise en page laptop -----------  */
-@media all and (min-width:768px) and (max-width:992px) {
-    
+@media all and (min-width:768px) and (max-width:1100px) {
+    #experience {
+        text-align: center;
+        width: 100%;
+    }
+    #image-pers {
+        flex-basis: 100%;
+        width: 600px;
+        height: 500px;
+    }
+    #presentation-personnel {
+        flex-basis: 100%;
+    }
 }
 
 
 /* ---------Mise en page desktop -----------  */
-@media all and (min-width:992px) and (max-width:1200px) {
+@media all and (min-width:1100px) and (max-width:1300px) {
     
 }
 
 
-/* ---------Mise en page plus large écran -----------  */
-@media all and (min-width:1200px) {
+/* ---------Mise en page large écran X1 -----------  */
+@media all and (min-width:1300px) and (max-width:1600px) {
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     
+}
+
+
+/* ---------Mise en page large écran X2-----------  */
+@media all and (min-width:1500px) and (max-width:1900px) {
+    body {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+
+/* ---------Mise en page large écran X3-----------  */
+@media all and (min-width:1900px) {
+    body {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
 }
