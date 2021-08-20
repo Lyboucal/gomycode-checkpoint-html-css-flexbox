@@ -1,5 +1,6 @@
 /* ---------Mise en page générale -----------  */
-    body {
+    
+    #container {
         margin-left: 40px;
         margin-right: 40px;
     }
@@ -44,10 +45,14 @@
     }
     #img {
         top: 2px;
-        border-radius: 50px;
+        height: 200px;
+        width: 200px;
     }
     #img2 {
-        border-radius: 50px;
+        border-radius: 100%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     #competence , #personnel {
         background-color:#F8F8F8 ;
@@ -61,6 +66,14 @@
     #desc-competence {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+
+    }
+    #desc-competence-bas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         padding-top: 20px;
 
     }
@@ -265,15 +278,9 @@
 }
 
 
-/* ---------Mise en page desktop -----------  */
-@media all and (min-width:1100px) and (max-width:1300px) {
-    
-}
-
-
 /* ---------Mise en page large écran X1 -----------  */
 @media all and (min-width:1300px) and (max-width:1600px) {
-    body {
+    #container {
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -283,7 +290,7 @@
 
 /* ---------Mise en page large écran X2-----------  */
 @media all and (min-width:1500px) and (max-width:1900px) {
-    body {
+    #container {
         margin-left: 200px;
         margin-right: 200px;
     }
@@ -292,7 +299,7 @@
 
 /* ---------Mise en page large écran X3-----------  */
 @media all and (min-width:1900px) {
-    body {
+    #container {
         margin-left: 300px;
         margin-right: 300px;
     }
